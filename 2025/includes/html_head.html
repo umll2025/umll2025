@@ -1,0 +1,35 @@
+<base href="/2025/">
+<meta charset="utf-8">
+<title>The 9th International Symposium on User Modeling and Language Learning (UMLL 2025)</title>
+<link rel="stylesheet" type="text/css" href="/2025/css/css.css">
+<script type="text/javascript" src="/2025/js/jquery-1.11.1.min.js"></script>
+
+<script>
+function slide() {
+	$('#header img:first-child').each(function() {
+		$(this).animate({marginLeft: -$(this).outerWidth(true)}, 500, function() {
+			$(this).insertAfter("#header img:last-child");
+			$(this).css({marginLeft: 0});
+			setTimeout(function() {slide()}, 10000);
+		});
+	});
+}
+
+function set_active_menu_item() {
+	page = window.location.pathname;
+	$('#menu div a').each(function() {
+		if ($(this).attr('href') == page) {
+			$(this).addClass('selected');
+		} else if ($(this).attr('href') == '/2025/') {
+			if (['/', '/index.html', '/2025/index.html'].indexOf(page) != -1) {
+				$(this).addClass('selected');
+			}
+		}
+	});
+}
+
+$(document).ready(function() {
+	// setTimeout(function() {slide()}, 10000);
+	set_active_menu_item();
+});
+</script>

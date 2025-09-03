@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Paper>
+	<PaperType>regular</PaperType>
+	<PaperID>12</PaperID>
+	<Title>An Efficient Algorithm to Process XYZ Queries</Title>
+	<Authors>Jane Adams, Sean Harris, Muhammad Cheema</Authors>
+	<CorrespondingAuthor>Sean Harris</CorrespondingAuthor>
+	<CorrespondingAuthorEmail>sean.harris@uni.edu.au</CorrespondingAuthorEmail>
+</Paper>
