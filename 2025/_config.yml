@@ -18,9 +18,9 @@ include:
 collections_dir: collections
 
 # Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
+# defaults:
+#  - scope:
+#      path: ""
+#      type: "pages"
+#    values:
+#      layout: "default"
